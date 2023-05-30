@@ -16,7 +16,7 @@ def main():
     st.title('Bank Marketing Prediction App')
     st.write('Please input the data for prediction:')
 
-    age = st.number_input('Age')
+    age = st.number_input('Age', min_value=0, max_value=100, step=1)
     job = st.selectbox('Select Job', options=["blue-collar", "services", "admin.", "entrepreneur", "self-employed", "technician", "management", "student", "retired", "housemaid", "unemployed"])
     marital = st.selectbox('Select Marital Status', options=["married", "single", "divorced"])
     education = st.selectbox('Select Education', options=["basic.9y", "high.school", "university.degree", "professional.course", "basic.6y", "basic.4y", "illiterate"])
