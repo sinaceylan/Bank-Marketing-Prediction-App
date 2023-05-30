@@ -13,7 +13,7 @@ def predict(model, input_df):
 
 def main():
 
-    st.title('Bank Marketing Prediction App')
+    st.title(':bank: Bank Marketing Prediction App')
     st.write('Please input the data for prediction:')
 
     age = st.number_input('Age', min_value=0, max_value=100, step=1)
